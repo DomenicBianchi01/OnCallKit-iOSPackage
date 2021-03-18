@@ -19,7 +19,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "OnCallKit",
-            path: "./Sources/OnCallKit.xcframework"
+            path: "./Sources/CalendarControl.xcframework"
         )
     ]
 )
