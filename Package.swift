@@ -4,25 +4,22 @@
 import PackageDescription
 
 let package = Package(
-  name: "OnCallKit",
-  platforms: [
-    .iOS(.v13)
-  ],
+    name: "OnCallKit",
+    platforms: [
+        .iOS(.v12)
+    ],
     products: [
         .library(
             name: "OnCallKit",
             targets: ["OnCallKit"]),
     ], dependencies: [
-        .package(
-                    url: "https://github.com/SnapKit/SnapKit",
-                    from: "5.0.1"
-                )
+        .package(url: "https://github.com/SnapKit/SnapKit", .exact("5.0.1"))
     ],
-  targets: [
-    .binaryTarget(
-      name: "OnCallKit",
-      path: "./Sources/OnCallKit.xcframework"
-    )
-  ]
+    targets: [
+        .binaryTarget(
+            name: "OnCallKit",
+            path: "./Sources/OnCallKit.xcframework"
+        )
+    ]
 )
 
