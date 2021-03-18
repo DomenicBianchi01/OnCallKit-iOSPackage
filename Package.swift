@@ -13,9 +13,9 @@ let package = Package(
             name: "OnCallKit",
             targets: ["OnCallKit"]),
     ],
-//    dependencies: [
-//        .package(url: "https://github.com/SnapKit/SnapKit", .exact("5.0.1"))
-//    ],
+    dependencies: [
+        .package(url: "https://github.com/SnapKit/SnapKit", .exact("5.0.1"))
+    ],
     targets: [
         .binaryTarget(
             name: "OnCallKit",
